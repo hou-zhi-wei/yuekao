@@ -11,7 +11,7 @@ let reducer=(state,action)=>{
         state.ADDLIST=action.ADD
     }
     if(action.type==="ADD_Up"){
-        // console.log(state.ADDLIST[action.index],action.index,"11111111111111")
+        // console.log(state.ADDLIST[acti   on.index],action.index,"11111111111111")
         state.List.push(state.ADDLIST[action.index])
         state.ADDLIST.splice(action.index,1)
         return {...state,List:[...state.List],ADDLIST:[...state.ADDLIST]}
